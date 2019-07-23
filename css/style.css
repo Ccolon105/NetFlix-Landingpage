@@ -48,6 +48,7 @@ img {
     height: 93vh;
     position: relative;
     background:url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+    zoom: 1;
 }
 
 .showcase::after {
@@ -59,13 +60,14 @@ img {
     width: 100%;
     z-index: 1;
     background: rgba( 0, 0, 0, 0.6);
-    box-shadow: inset 120px 100px 120px #000,  inset -120px -100px 120px #000 ;
+    box-shadow: inset 120px 100px 120px #000,  inset -120px -0px 120px #000 ;
+    zoom: 1;
 }
 
 .showcase-top {
     position: relative;
     z-index: 2;
-    height: 90px;
+    height: 95px;
 }
 
 .showcase-top img {
@@ -136,7 +138,33 @@ img {
     padding-top: 0.5 rem;
 }
 
+.tabs .container > div {
+    padding: 1.5rem 0;
 
+}
+
+.tabs .container > div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+.tab-content{
+    padding:3rem 0;
+    background: #000;
+    color: #fff;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
 /* Container */
 .container{
     max-width: 70%;
@@ -144,6 +172,31 @@ img {
     overflow: hidden;
     padding: 0 2rem;
 }
+
+/* Text Styles */
+
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.text-lg {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+ 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark{
+    color: #999
+}
+
+
 /* Buttons */
 
 .btn {
